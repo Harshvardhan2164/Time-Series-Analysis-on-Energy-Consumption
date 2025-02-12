@@ -8,16 +8,17 @@
   - [GRU Model](#gru-model)
   - [LSTM Model](#lstm-model)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Evaluation Metrics](#evaluation-metrics)
-- [Results](#results)
+- [Results](#result-and-insights)
 - [Future Work](#future-work)
 - [Contributors](#contributors)
 
 ---
 
 ## **Introduction**
-DNA sequence prediction is a crucial task in bioinformatics, enabling researchers to analyze genetic patterns, predict mutations, and model gene structures. This project implements three machine learning approaches to predict nucleotide sequences: **N-Gram, LSTM, and Transformer models**.
+Energy consumption forecasting is crucial for efficient power management, grid stability, and energy resource planning. This project leverages **Time Series Analysis** techniques to predict energy consumption using **GRU and LSTM models**. By utilizing the **PJM Interconnection LLC Energy Consumption Dataset**, which records **hourly power usage across different U.S. regions**, the project aims to provide accurate consumption forecasts.  
+
+The analysis incorporates the **moving average concept** for trend detection, and **sMAPE** is used as the evaluation metric to measure forecasting accuracy. 🚀
 
 ## **Project Overview**
 This project focuses on analyzing and predicting energy consumption using time series analysis techniques. It employs two deep learning models: Gated Recurrent Unit (GRU) and Long Short-Term Memory (LSTM), leveraging the moving average concept for trend analysis. The evaluation metric used for assessing model performance is Symmetric Mean Absolute Percentage Error (sMAPE).
@@ -35,7 +36,7 @@ Please download the dataset and place it in the `Dataset` directory.
 
 ## **Model Architectures**
 
-### **N-Gram Model**
+### **GRU Model**
 - A simpler alternative to LSTM with fewer parameters.
 - Efficient in learning time-dependent patterns.
 - Performs well with limited computational resources.
@@ -77,9 +78,9 @@ This is the formula for *sMAPE*:
 $sMAPE = \frac{100}{n} \sum_{t=1}^n {2}\frac{|y_i - \hat{y}_i|}{|y_i| + |\hat{y}_i|}$
 
 where:
-- \( y_i \) = Actual value  
-- \( \hat{y}_i \) = Predicted value  
-- \( N \) = Number of data points
+- $y_i$ = Actual value  
+- $\hat{y}_i$ = Predicted value  
+- $N$ = Number of data points
 
 ## **Result and Insights**
 - The models effectively capture seasonal and trend patterns in energy consumption.
@@ -93,7 +94,7 @@ where:
 - Deploy the trained model as an API for real-time energy forecasting.
 
 ## **Contributors**
-- **Devansh Shrivastava** ([GitHub](https://github.com/devansh-srv))
+- **Devansh Srivastava** ([GitHub](https://github.com/devansh-srv))
 - **Harshvardhan Sharma** ([GitHub](https://github.com/Harshvardhan2164))
 - **Naman Jaswani** ([GitHub](https://github.com/Naman64000))
 - **Vansh Jangir** ([GitHub](https://github.com/vanshjangir))
