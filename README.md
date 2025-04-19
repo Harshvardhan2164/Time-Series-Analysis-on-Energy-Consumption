@@ -18,7 +18,7 @@
 ## **Introduction**
 Energy consumption forecasting is crucial for efficient power management, grid stability, and energy resource planning. This project leverages **Time Series Analysis** techniques to predict energy consumption using **GRU and LSTM models**. By utilizing the **PJM Interconnection LLC Energy Consumption Dataset**, which records **hourly power usage across different U.S. regions**, the project aims to provide accurate consumption forecasts.  
 
-The analysis incorporates the **moving average concept** for trend detection, and **sMAPE** is used as the evaluation metric to measure forecasting accuracy. 🚀
+The analysis incorporates the **moving average concept** for trend detection, and **sMAPE** is used as the evaluation metric to measure forecasting accuracy.
 
 ## **Project Overview**
 This project focuses on analyzing and predicting energy consumption using time series analysis techniques. It employs two deep learning models: Gated Recurrent Unit (GRU) and Long Short-Term Memory (LSTM), leveraging the moving average concept for trend analysis. The evaluation metric used for assessing model performance is Symmetric Mean Absolute Percentage Error (sMAPE).
